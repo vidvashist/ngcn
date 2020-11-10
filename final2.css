@@ -1,0 +1,175 @@
+* { box-sizing: border-box;  margin: 0; }
+
+body { background-color: #E1FFDF; color: #2A2A2A; font-family: "Courier New", Courier, monospace; }
+ 
+#wrapper { background-color:  #CBE9C0; 
+}
+
+header { color: #2A2A2A; 
+        background-color: #869DC7;
+		background-image: url(plants_header.jpg);
+	    background-repeat: no-repeat;		
+		background-size: cover;
+        padding: .5em 0 .5em 5.5em;
+}
+
+header a:link { color: #2A2A2A; }
+header a:visited { color: #2A2A2A; }
+header a:hover { color: #549311; }
+
+nav a:link { color: #2A2A2A; }
+nav a:visited { color: #D9462B; }
+nav a:hover { color: #549311; }
+
+main {   background-color: #FFFFFF;
+         color: #000000;
+	     padding: 1em; 
+}
+main ul { list-style-image: url(marker.png); padding-left: 115px; }
+aside { text-align: center }
+
+footer {  background-color: #CBE9C0;
+         font-size:70%;
+         text-align: center;
+         padding: 0.5em 0;
+		 color: #2A2A2A;
+}
+h1 { background-color: #FFFFFF;
+		opacity: .8;  
+		font-family: "Courier New", Courier, monospace;
+		padding: 10px;
+		margin: auto;
+		text-align: left;
+}
+
+h1, h2 { color: #2A2A2A; font-size: 150%; font-family: "Courier New", Courier, monospace; text-decoration: none; }
+	p { color: #2A2A2A; padding-top: 10px;	}
+
+	h2 { text-decoration: none; }
+img { width: auto;
+		max-width: 100%;
+		height: auto;}
+
+nav ul { list-style-type: none;
+         padding-left: 0; 
+		 border-top: 1px inset #2A2A2A;
+}
+nav li { border-bottom: 1px inset #2A2A2A;  
+         text-align: center;
+		 padding-top: .5em;
+		 padding-bottom: .5em;
+}
+nav a { text-decoration: none;
+		font-weight: bold;
+		transition: color 2s ease;
+}
+header a { transition: color 2s ease; }
+
+form {display: flex; 
+		flex-flow: column nowrap;
+		background-color: #FFFFFF;
+		font-family: "Courier New", Courier, monospace;
+		width: 200px;
+}
+
+nav #page { font-weight: bold;
+            color: #FEFEFE; }
+			
+@media (min-width: 780px) {	
+ nav li { display: inline-block;
+          width: 7em;
+          padding: .5em;
+		  border: none; 
+         }
+ nav ul { text-align: center;
+			font-size: 100%; }
+ main { width: auto; 
+		margin-left: 25px;
+		margin-right: 25px; }
+ footer { clear: both; }
+ aside { margin-left: 55%; }
+
+
+ h1 {	padding: 10px;
+		margin-bottom: 0;
+		text-align: center;
+		margin-left: 200px;
+		margin-right: 200px;
+}
+form { display: flex;
+		flex-flow: column nowrap; }
+}
+@media (min-width: 1024px) {
+  nav li { display: block; }
+	nav { background-color: #CBE9C0; 
+	font-weight: bold;
+	font-size: 100%;
+	font-family: "Courier New", Courier, monospace;
+	float: left; width: 170px; 
+	height: 100%;
+	float: left; }
+	section { float: left; width: 25%; padding-left: 1em; padding-right: 1em; margin-left: 40px;}
+	nav a { text-decoration: none; transition: color 2s ease; }
+	nav ul { margin: 0; padding-left: 1em; padding-top: 1em; font-size: 1.2em; list-style-type: none; border: none; }
+	#wrapper { width: 95%; 
+				margin-left: auto; 
+				margin-right: auto; 
+				padding-top: .5em; 
+				padding-bottom: .5em; 
+				padding-left: .5em; 
+				padding-right: .5em; 
+				background-color: #FFFFFF; 
+				border-radius: 10px;
+				display: grid; 
+	               grid-template-columns: 150px auto auto;
+	               grid-template-rows: auto auto auto ;}
+				   	header { grid-row: 1 / 2; grid-column: 1 / 4; }
+					nav    { grid-row: 2 / 3; grid-column: 1 / 2; }
+					main   { grid-row: 2 / 3; grid-column: 2 / 3; }
+					aside  { grid-row: 2 / 3; grid-column: 3 / 4; }
+					footer { grid-row: 3 / 4; grid-column: 1 / 4; }
+	#container { padding: 1em; margin-left: auto; margin-right: auto; 
+			width: 80%; height: 1000%;
+			background-image: linear-gradient(to bottom, #E1FFDF, #FFFFFF); 
+			background-repeat: no-repeat;
+			background-attachment: fixed; }
+	form { padding-left: 10px; }
+	h1, h2, h3, p { padding-left: 10px; }
+	#address { padding-left: 25px; }
+	#form {margin-left: 150px; }
+}
+
+video { text-align: center;
+		margin: 0 auto;
+		display: block;
+		padding-left: 20px;
+		
+}
+ #ferns { height: 159px; background-image: url(ferns.jpg); background-repeat: no-repeat; width: 238px; float: bottom; float: right; margin-left: 10px; margin-bottom: 10px;}
+ #picnic { width: 384px; height: 256px; background-image: url(picnic1.jpg); background-repeat: no-repeat; margin-top: 10px; margin-bottom: 0; }
+ #ss { height: 188px; background-image: url(ss.jpg); background-size: 100% 100%; background-repeat: no-repeat; }
+ 
+ /*Pictures for the shops page*/
+ 
+ #aloe { width: 384px; height: 256px; background-image: url(aloe.jpg); background-size: contain; background-repeat: no-repeat; }
+ #spider { width: 384px; height: 256px; background-image: url(spider.jpg); background-size: contain; background-repeat: no-repeat; }
+ #peace { width: 384px; height: 256px; background-image: url(peace.jpg); background-size: contain; background-repeat: no-repeat; }
+ 
+ #rose { width: 384px; height: 256px; background-image:  url(rose.jpg); background-size: contain; background-repeat: no-repeat; }
+ #daisy { width: 300px; height: 256px; background-image: url(daisies.jpg); background-size: contain; background-repeat: no-repeat; margin-top: 25px; margin-bottom: -25px; }
+ #carnation { width: 384px; height: 256px; background-image: url(carnations.jpg); background-size: contain; background-repeat: no-repeat; }
+ 
+ #russian { width: 384px; height: 256px; background-image: url(russian.jpg); background-size: contain; background-repeat: no-repeat; }
+ #hasta { width: 300px; height: 256px; background-image: url(hastas.jpg); background-size: contain; background-repeat: no-repeat; margin-top: 25px; margin-bottom: -25px;}
+ #yarrow { width: 384px; height: 256px; background-image: url(yarrow.jpg); background-size: contain; background-repeat: no-repeat; }
+ 
+ .h2 { color: #2A2A2A;  background-color: #CBE9C0; text-decoration: none; }
+ .h3 { color: #2A2A2A; background-color: #CBE9C0; text-align: center }
+ .name { color: #2A2A2A; background-color: #CBE9C0; }
+ .care { padding-left:200px; }
+ .center {text-align: center; }
+ .left {text-align: left}
+ .boxed { border: 1px hidden; height: 100px; width: 50px; }
+ #pot { width: 200px; height: 256px; background-image: url(pot.jpg); background-size: contain; background-repeat: no-repeat; float: right; }
+ 
+ 
